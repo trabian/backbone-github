@@ -1,0 +1,10 @@
+{
+  "name": "backbone-github",
+  "version": "0.0.1",
+  "description": "Backbone models for the GitHub API",
+  "stitch": {
+    "paths": [
+      "src"
+    ]
+  }
+}
