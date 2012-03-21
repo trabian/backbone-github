@@ -1,7 +1,16 @@
 {
   "name": "backbone-github",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Backbone models for the GitHub API",
+  "homepage": "https://github.com/trabian/backbone-github",
+  "author": {
+    "name": "Matt Dean",
+    "email": "matt@trabian.com"
+  },
+  "bugs": {
+    "url": "https://github.com/trabian/backbone-github/issues",
+    "email": "matt@trabian.com"
+  },
   "stitch": {
     "paths": [
       "src"
