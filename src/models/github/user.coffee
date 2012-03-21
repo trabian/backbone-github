@@ -1,7 +1,24 @@
+IssueList = require 'collections/github/issues'
+
+apiRoot = 'https://api.github.com'
+
 module.exports = class User extends Backbone.Model
 
-  sync: (method, model, options) =>
-    options.success()
+  url: "#{apiRoot}/user"
+
+  initialize: ->
+
+    @on 'change:id', @bootstrap
+
+  bootstrap: =>
+
+    @issues = new IssueList
+
+    @issues.sync = @sync
+    @issues.url = "#{apiRoot}/issues"
+
+  #sync: (method, model, options) =>
+    #options.success()
 
   validate: (attrs) ->
 
